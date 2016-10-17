@@ -18,7 +18,7 @@
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.layer.masksToBounds = YES;
+        self.layer.masksToBounds = NO;
         self.drawsGradientBackground = NO;
         self.opaque = NO;
         self.cornerRadius = 4.0f;
@@ -26,6 +26,9 @@
         self.gradientBottomColor = [UIColor colorWithRed:0.22f green:0.43f blue:0.16f alpha:1.0f];
         self.borderColor = [UIColor lightGrayColor];
         self.borderWidth = 1.0f;
+        UIImageView *image = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"big_cirlce"]];
+        image.frame = CGRectMake(0, -10, image.frame.size.width, image.frame.size.height);
+        [self addSubview:image];
     }
     return self;
 }

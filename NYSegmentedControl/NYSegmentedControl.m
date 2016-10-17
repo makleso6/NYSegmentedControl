@@ -89,7 +89,7 @@
     _springAnimationVelocity = 0.2f;
     
     self.layer.borderColor = [[UIColor lightGrayColor] CGColor];
-    self.layer.masksToBounds = YES;
+    self.layer.masksToBounds = NO;
     self.layer.cornerRadius = 4.0f;
     self.layer.borderWidth = 1.0f;
     

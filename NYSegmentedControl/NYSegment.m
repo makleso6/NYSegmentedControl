@@ -31,7 +31,10 @@ static CGFloat const kMinimumSegmentWidth = 68.0f;
         self.titleLabel.font = [UIFont systemFontOfSize:13.0f];
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
         self.titleLabel.backgroundColor = [UIColor clearColor];
-        [self addSubview:self.titleLabel];
+        //[self addSubview:self.titleLabel];
+        UIImageView *image = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"small_circle"]];
+        image.frame = CGRectMake(25, 17, image.frame.size.width, image.frame.size.height);
+        [self addSubview:image];
     }
     return self;
 }
